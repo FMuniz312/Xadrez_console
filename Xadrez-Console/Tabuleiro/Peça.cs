@@ -8,15 +8,15 @@ namespace Tabuleiro
     {
         public Posicao Position { get; set; }
         public Cor Color { get; protected set; }
-        public Tabuleiros Tabposition { get; protected set; }
+        public Tabuleiros Tabuleiro { get; protected set; }
         public int QntDeMovimentos { get; protected set; }
 
-        public Peca(Posicao position, Cor color, Tabuleiros tabposition, int qntDeMovimentos)
+        public Peca(Cor color, Tabuleiros tabuleiro)
         {
-            Position = position;
+            Position = null;
             Color = color;
-            Tabposition = tabposition;
-            QntDeMovimentos = qntDeMovimentos;
+            Tabuleiro = tabuleiro;
+            QntDeMovimentos = 0;
         }
     }
 }

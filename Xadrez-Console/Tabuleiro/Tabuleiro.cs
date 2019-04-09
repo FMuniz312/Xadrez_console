@@ -24,5 +24,10 @@ namespace Tabuleiro
         return  PecasMatriz[lines, colums];
         }
 
+        public void colocarpeca (Peca peca, Posicao posicao)
+        {
+            PecasMatriz[posicao.Lines,posicao.Colums] = peca;
+        }
+
     }
 }
