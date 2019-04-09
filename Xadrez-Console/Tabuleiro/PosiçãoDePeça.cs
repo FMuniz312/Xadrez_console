@@ -15,6 +15,10 @@ namespace Tabuleiro
             Colums = colums;
         }
 
+        public override string ToString()
+        {
+            return Lines + "," + Colums;
+        }
 
     }
 }
