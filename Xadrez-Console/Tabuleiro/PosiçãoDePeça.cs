@@ -17,7 +17,7 @@ namespace Tabuleiro
 
         public override string ToString()
         {
-            return Lines + "," + Colums;
+            return Lines + " , " + Colums;
         }
 
     }
