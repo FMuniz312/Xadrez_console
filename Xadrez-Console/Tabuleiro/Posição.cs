@@ -2,9 +2,19 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Xadrez_Console.Tabuleiro
+namespace Tabuleiro
 {
-    class Posição
+    class Posicao
     {
+        public int Lines { get; set; }
+        public int Colums { get; set; }
+
+        public Posicao(int lines, int colums)
+        {
+            Lines = lines;
+            Colums = colums;
+        }
+
+
     }
 }
