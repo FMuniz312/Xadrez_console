@@ -18,7 +18,7 @@ namespace Xadrez_Console
                     }
                     else
                     {
-                        ImprimirPreca(tabuleiros.Pecasnotab(i, j));
+                        ImprimirPreca(tabuleiros.Pecasnotab(i, j));//Retorna objeto de Matriz cuja as coordenadas sejam i e j
                         
                     }
 
@@ -28,7 +28,7 @@ namespace Xadrez_Console
             }
             System.Console.WriteLine("  a b c d e f g h");//Letras de direção do tabuleiro
         }
-        public static void ImprimirPreca(Peca peca)
+        public static void ImprimirPreca(Peca peca)//Alterar cor de peça
         {
             if(peca.Color == Cor.Branco)
             {
@@ -37,7 +37,7 @@ namespace Xadrez_Console
             else
             {
                 ConsoleColor aux = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.Green;
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.Write(peca+ " ");
                 Console.ForegroundColor = aux;
             }

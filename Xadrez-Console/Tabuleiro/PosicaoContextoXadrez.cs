@@ -15,7 +15,7 @@ namespace Tabuleiro
             Lines = lines;
         }
 
-        public Posicao Toposition()
+        public Posicao Toposition() // Transforma em coordenadas de xadrez
         {
             return new Posicao(8 - Lines, Colums - 'a');
         }

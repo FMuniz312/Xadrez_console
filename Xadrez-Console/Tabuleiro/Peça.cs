@@ -18,5 +18,10 @@ namespace Tabuleiro
             Tabuleiro = tabuleiro;
             QntDeMovimentos = 0;
         }
+
+        public void incrementamov()
+        {
+            QntDeMovimentos++;
+        }
     }
 }
